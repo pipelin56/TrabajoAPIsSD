@@ -1,0 +1,31 @@
+<div class="container bgwhite clearfix">
+    <div id="maincont" class="bodycontainer clearfix ">
+        <h1>Conectar con Dropbox</h1>
+        <script language="JavaScript" type="text/javascript">
+            function popitup(url) {
+                newwindow = window.open(url, 'name', 'height=600,width=600');
+                if (window.focus) {
+                    newwindow.focus()
+                }
+                return false;
+            }
+        </script>
+        <form  action="/success" class="col-md-12" name="dropboxForm" type="POST" method="POST">
+            <div class="well">
+                <div class="form-group">
+                    <p>*Para poder guardar sus correos en Dropbox es necesario que dé permisos e indique la clave que dropbox le proporciona. <a href="" onClick="return popitup('https://www.dropbox.com/1/oauth2/authorize?response_type=code&client_id=5g0781coh89ty89')">
+Click aquí para obtener permisos.
+</a> </p>
+                    
+                </div>
+                <div class="form-group">
+                    *
+                    <label id="password">Contraseña:</label>
+                    <input type="password" name="tokenkey" id="telefono" ng-model="telefono" class="form-control" required>
+                </div>
+                <span class="help-block">Los campos con * son obligatorios.</span>
+                <button type="submit" class="btn btn-primary btn-lock" ng-disabled="dropboxForm.$invalid">Conectar</button>
+            </div>
+        </form>
+    </div>
+</div>
