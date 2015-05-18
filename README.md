@@ -23,7 +23,7 @@ Mediante la API de Dropbox accedemos a la cuenta de Dropbox y almacenamos los co
 ###Planificación
 
 Semana | Encargados | Tareas
--- | ---- | ---
+-- | -- | --
 Primera | Felipe, Justo, Jesús, Christian | Pensar qué proyecto vamos a hacer.
 Segunda | Felipe, Jesús | Buscar información en la API de Dropbox, cómo logearse y subir ficheros.
 Segunda | Justo, Christian | Buscar informacion en la API de Gmail, cómo logearse y cómo descargar ficheros adjuntos de correos.
