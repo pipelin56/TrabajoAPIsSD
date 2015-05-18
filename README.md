@@ -20,7 +20,7 @@ Mediante la API de Dropbox accedemos a la cuenta de Dropbox y almacenamos los co
 >                     pip install dropbox.
 
 ##Historico de cambios
-###Planificación
+###Tabla de Planificación
 
 Semana | Encargados | Tareas
 -- | -- | --
