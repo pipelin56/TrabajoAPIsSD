@@ -28,8 +28,8 @@ def sube():
 	global contA
 	global archivo
 	token = request.form['tokenkey']
-	app_key = '5g0781coh89ty89'
-	app_secret = 'a77tewdx1s0cpa6'
+	app_key = 'INDIQUE-API-KEY'
+	app_secret = 'INDIQUE-API-SECRET'
 
 	flow = dropbox.client.DropboxOAuth2FlowNoRedirect(app_key, app_secret)
 	authorize_url = flow.start()
