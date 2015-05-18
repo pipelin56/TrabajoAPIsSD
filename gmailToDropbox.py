@@ -37,7 +37,8 @@ def sube():
 	access_token, user_id = flow.finish(token)
 
 	client = dropbox.client.DropboxClient(access_token)
-	response = client.put_file('/Seguridad/'+archivo+'.zip',archivo+'.zip')
+	file = open(archivo+'.zip')
+	response = client.put_file('Seguridad/'+archivo+'.zip',file)
 	return render_template('success.html',n=contA)
 
 @app.route("/dropbox",methods=['POST'])

@@ -1,0 +1,271 @@
+/** Import CSS **/
+@import url("reset.css");
+@import url("menu.css");
+
+/** Google Fonts **/
+
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600,600italic,700,700italic,900,900italic");
+
+/** Font Awesome **/
+
+@import url("fonts/fontawesome/font-awesome.css");
+
+/** Global Styles **/
+
+*
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html
+{
+	height: 100%;
+	overflow: auto;
+	
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body
+{
+	font-family: "Source Sans Pro", Arial, Verdana, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #444;
+	font-weight: 300;
+	background: #1abc9c;
+	
+	text-rendering: optimizeLegibility;
+	vertical-align: baseline;
+}
+
+h1 
+{
+    font-size: 5.9vw;
+}
+
+::selection
+{
+	background: #16a085;
+	color: #FFF;
+}
+
+::-moz-selection
+{
+	background: #16a085;
+	color: #FFF;
+}
+
+a
+{
+	color: #16a085;
+	text-decoration: none;
+}
+
+	a:hover
+	{
+		color: #222;
+	}
+
+img
+{
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+}
+
+/** Colours **/
+
+.bgblack
+{
+	background: #222;
+}
+
+.bgwhite
+{
+	background: #FFF;
+}
+.bggrey
+{
+    background-color: #CFCFC4;
+}
+
+/** Layout Styles **/
+
+.container
+{
+	width: 100%;
+	padding: 0 30px;
+	min-width: 280px;
+	line-height: 30px;
+}
+
+	.container .bodycontainer
+	{
+		margin: 0 auto;
+		width: 100%;
+		max-width: 1000px;
+	}
+	
+/** Sections **/
+
+#headercont
+{
+	padding: 40px 0 30px 0;
+}
+
+	#headercont h1
+	{
+		float: left;
+		margin: 0 0 20px 0;
+		font-size: 56px;
+		line-height: 56px;
+		font-weight: 900;
+		text-transform: uppercase;
+		letter-spacing: -1px;
+	}
+	
+		#headercont h1 span
+		{
+			display: block;
+			font-size: 30px;
+			line-height: 30px;
+			font-weight: 300;
+			letter-spacing: 1px;
+		}
+		
+			#headercont h1 a
+			{
+				color: #FFF;
+			}
+
+#menucont
+{
+	
+}
+
+#maincont
+{
+	padding: 30px 0;
+	min-height: 500px;
+	height: auto !important;
+	height: 500px;
+}
+
+	#maincont img.imgright
+	{
+		float: right;
+		width: 100%;
+		max-width: 260px;
+		margin: 0 0 20px 20px;
+	}
+	
+	#maincont img.imgleft
+	{
+		float: left;
+		width: 100%;
+		max-width: 260px;
+		margin: 0 20px 20px 0;
+	}
+
+	#maincont p { margin: 0 0 20px 0; }
+	#maincont strong { font-weight: 600; }
+	#maincont em { font-style: italic; }
+	
+	#maincont h1, #maincont h2, #maincont h3, #maincont h4, #maincont h5
+	{
+		margin: 0 0 20px 0;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: -0.4px;
+	}
+	
+		#maincont h1 { font-size: 30px; line-height: 30px; }
+		#maincont h2 { font-size: 26px; line-height: 26px; }
+		#maincont h3 { font-size: 22px; line-height: 22px; letter-spacing: -0.2px; }
+		#maincont h4 { font-size: 20px; line-height: 20px; letter-spacing: -0.2px; }
+		#maincont h5 { font-size: 18px; line-height: 18px; letter-spacing: -0.2px; }
+		
+	#maincont ul { margin: 0 0 20px 35px; list-style-type: square; }
+	#maincont ul li { padding: 0 0 0 2px; }
+	#maincont ul ul { margin: 0 0 0 25px; }
+	
+	#maincont ol { margin: 0 0 20px 35px; list-style-type: decimal; }
+	#maincont ol li { padding: 0 0 0 2px; }
+	#maincont ol ol { margin: 0 0 0 25px; }
+	
+	#maincont hr { clear: both; border: 0; height: 0; margin: 0 0 20px 0; border-top: 1px dashed #CCC; }
+    
+
+    #maincont table td strong { font-size: 14px;}
+    #maincont table td label { font-size: 13px; padding: 4px;}
+    
+
+#footercont
+{
+	padding: 40px 0;
+	text-align: right;
+	line-height: 22px;
+	color: #BBEBE1;
+}
+
+	#footercont a
+	{
+		color: #FFF;
+	}
+	
+	#footercont a:hover
+	{
+		text-decoration: underline;
+	}
+
+
+@media screen and (max-width: 768px)
+{
+	
+	#maincont img.imgright
+	{
+		float: none;
+		width: 100%;
+		max-width: 300px;
+		margin: 0 0 20px 0;
+	}
+	
+	#maincont img.imgleft
+	{
+		float: none;
+		width: 100%;
+		max-width: 300px;
+		margin: 0 0 20px 0;
+	}
+	
+	#footercont
+	{
+		text-align: left;
+	}
+	
+}
+
+@media screen and (max-width: 480px)
+{	
+    #maincont h1
+	{
+        font-size: 20px;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: -0.4px;
+	}
+    #maincont h3
+	{
+        font-size: 12px;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: -0.4px;
+	}
+    #maincont table td strong { font-size: 10px;}
+    #maincont table td label { font-size: 8px; padding: 2px;}
+    #maincont .row {padding: 0px;}
+
+}

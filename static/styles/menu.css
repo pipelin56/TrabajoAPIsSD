@@ -1,0 +1,113 @@
+/** Menu Styles **/
+
+.desktop #menucont ul.menu li
+{
+	position: relative;
+	float: left;
+}
+
+	.desktop #menucont ul.menu li a
+	{
+		float: left;
+		color: #FFF;
+		padding: 0 15px;
+		margin: 0;
+		font-weight: 300;
+		line-height: 50px;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+	
+		.desktop #menucont ul.menu li a:hover
+		{
+			background: #16a085;
+		}
+		
+			.desktop #menucont ul.menu li.active a,
+			.desktop #menucont ul.menu li.active a:hover
+			{
+				background: #16a085;
+			}
+
+.desktop #menucont .menutitle
+{
+	display: none;
+}
+
+@media screen and (max-width: 768px)
+{
+	
+    #menucont .menu
+	{
+        display: none;
+    }
+
+	#menucont .menu.open
+	{
+        display: block;
+    }
+	
+	#menucont ul.menu li
+	{
+		position: relative;
+		float: none;
+	}
+		
+		#menucont ul.menu li, #menucont ul.menu ul li
+		{
+			display: block;
+		}
+
+			#menucont ul.menu li a
+			{
+				width: 100%;
+				margin: 0;
+				padding: 5px 0;
+				text-indent: 0;
+				line-height: 23px;
+				color: #FFF;
+				background: none;
+			}
+			
+				#menucont ul.menu li a:hover
+				{
+					color: #16a085;
+					background: none;
+				}
+				
+					#menucont ul.menu > li:last-child a
+					{
+						margin: 0 0 20px 0;
+					}
+
+#menucont .menutitle
+{
+	display: block;
+	width: 100%;
+	padding: 12px 50px 12px 0;
+	display: block;
+	cursor: pointer;
+	text-align: left;
+	color: #FFF;
+	text-transform: uppercase;
+}
+
+	#menucont .menutitle p strong
+	{
+		margin: 0;
+		font-size: 18px;
+		font-weight: 700;
+	}
+
+	#menucont .menutitle span
+	{
+		margin: 0 0 0 8px;
+		font-size: 18px;
+	}
+	
+}
+
+
+.dropdown-menu {
+    background: #222;
+}
